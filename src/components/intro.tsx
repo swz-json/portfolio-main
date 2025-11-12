@@ -32,7 +32,9 @@ export const Intro = () => {
             <span className="absolute flex size-full animate-ping rounded-full bg-green-400 opacity-75"></span>
             <span className="relative flex size-2 rounded-full bg-green-400"></span>
           </span>
-          <span className="font-mono text-sm">Open to a 6 month internship starting in March 2026!</span>
+          <span className="font-mono text-sm">
+            Open to a 6 month internship starting in March 2026!
+          </span>
         </Link>
       </motion.div>
       <motion.h1
@@ -54,8 +56,10 @@ export const Intro = () => {
         }}
         className="text-muted-foreground max-w-xl"
       >
-       Data Engineering student in Sophia-Antipolis, France. I build data pipelines and AI platforms (Python, SQL, Airflow, Docker, AWS/GCP), craft front-ends (Next.js, React, Tailwind), and work with ETL, REST APIs, star/snowflake schemas.
-        
+        Data Engineering student in Sophia-Antipolis, France. I build data
+        pipelines and AI platforms (Python, SQL, Airflow, Docker, AWS/GCP),
+        craft front-ends (Next.js, React, Tailwind), and work with ETL, REST
+        APIs, star/snowflake schemas.
       </motion.p>
       <motion.div
         initial={{ opacity: 0, y: 100 }}
@@ -70,14 +74,15 @@ export const Intro = () => {
             Get in touch <Icons.arrowRight className="ml-2 size-4" />
           </Link>
         </Button>
-   <Button variant="outline" size="lg" className="hidden sm:flex" asChild>
-  <a href="/Wassim_Elmoufakkir_CV.pdf" download="Wassim_Elmoufakkir_CV.pdf">
-    Download my CV<Icons.download className="ml-2 size-4" />
-  </a>
-</Button>
-
-
-
+        <Button variant="outline" size="lg" className="hidden sm:flex" asChild>
+          <a
+            href="/Wassim_Elmoufakkir_CV.pdf"
+            download="Wassim_Elmoufakkir_CV.pdf"
+          >
+            Download my CV
+            <Icons.download className="ml-2 size-4" />
+          </a>
+        </Button>
 
         <Button variant="outline" size="icon" asChild>
           <Link
