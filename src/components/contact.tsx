@@ -24,16 +24,20 @@ export const Contact = () => {
   } = useForm<TFormSchema>({ resolver: zodResolver(formSchema) });
 
   const onSubmit = async (values: TFormSchema) => {
-    const { data, error } = await sendEmailAction(values);
+  const res = await sendEmailAction(values);
 
-    if (error) {
-      toast.error(error);
-      return;
-    }
+  if ('error' in res && res.error) {
+    toast.error(res.error);
+    return;
+  }
 
-    toast.success(data);
-    reset();
-  };
+  // success branch
+  const msg = 'message' in res && res.message ? res.message : 'Thanks! Your message was sent.';
+  toast.success(msg);
+
+  reset();
+};
+
 
   return (
     <motion.section
