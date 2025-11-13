@@ -23,21 +23,28 @@ export const Contact = () => {
     formState: { errors },
   } = useForm<TFormSchema>({ resolver: zodResolver(formSchema) });
 
-  const onSubmit = async (values: TFormSchema) => {
-  const res = await sendEmailAction(values);
+const onSubmit = async (values: TFormSchema) => {
+  const fd = new FormData();
+  fd.append('email', values.email);
+  fd.append('name', values.name);
+  fd.append('message', values.message);
 
-  if (!res || ('success' in res && !res.success)) {
-    toast.error(res?.error ?? 'Failed to send message');
+  const res = await sendEmailAction(fd);
+
+  if (!res.success) {
+    toast.error(res.error);
     return;
- 
- 
- 
- 
-  }
-toast.success(res.message ?? 'Message sent');
+    }
+
+
+  toast.success(res.message);
   reset();
 
+
+
 };
+
+
 
 
 
