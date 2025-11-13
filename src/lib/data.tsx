@@ -1,8 +1,4 @@
-import Link from 'next/link';
-
-import { buttonVariants } from '@/components/button';
 import { Icons } from '@/components/icons';
-import { cn } from '@/lib/utils';
 
 export const links = [
   {
@@ -79,7 +75,7 @@ export const experiencesData = [
     company: 'University of Cincinnati ( Cincinnati, Ohio, United States )',
     description:
       'As an international summer scholar, I completed an intensive program focused on practical data science and entrepreneurship. I worked with Python (pandas/scikit-learn) for data analysis and basic ML, practiced data visualization, and took a course on interpersonal communication and negotiation. I also joined the StartupCincy bootcamp, progressing from idea to prototype and final pitch within a team.',
-    period: 'Mai 2023 – sept 2023',
+    period: 'Mai 2023 - sept 2023',
     technologies: [
       'Entrepreneurship',
       'scikit-learn',
