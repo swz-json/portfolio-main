@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+
+
 import { Icons } from '@/components/icons';
 
 export const links = [
@@ -57,17 +60,7 @@ export const experiencesData = [
     description:
       'During my first year of the MSc, I focused on core data engineering: building ETL pipelines (Python/SQL), data modeling, cloud (AWS/Azure), orchestration (Airflow), CI/CD & MLOps, and analytics with Power BI.',
     period: 'Sep 2025 - Present',
-    technologies: [
-      'Python',
-      'SQL',
-      'Airflow',
-      'AWS',
-      'Power BI',
-      'Git',
-      'Docker',
-      'R',
-      'Jupyter Notebook',
-      'Linux',
+    technologies: ['Python','SQL','Airflow','AWS','Power BI','Git','Docker','R','Jupyter Notebook','Linux',
     ],
   },
   {
@@ -76,18 +69,7 @@ export const experiencesData = [
     description:
       'As an international summer scholar, I completed an intensive program focused on practical data science and entrepreneurship. I worked with Python (pandas/scikit-learn) for data analysis and basic ML, practiced data visualization, and took a course on interpersonal communication and negotiation. I also joined the StartupCincy bootcamp, progressing from idea to prototype and final pitch within a team.',
     period: 'Mai 2023 - sept 2023',
-    technologies: [
-      'Entrepreneurship',
-      'scikit-learn',
-      'Data Visualization',
-      'Communication',
-      'Negotiation',
-      'Next.js',
-      'TypeScript',
-      'Sanity CMS',
-      'Tailwind',
-      'SQL',
-      'Python',
+    technologies: ['Entrepreneurship', 'scikit-learn', 'Data Visualization', 'Communication', 'Negotiation', 'Next.js', 'TypeScript', 'Sanity CMS', 'Tailwind', 'SQL', 'Python',
     ],
   },
   {
@@ -98,17 +80,7 @@ export const experiencesData = [
     description:
       'As an MIAGE student, I combined software engineering with business analytics: built web apps and APIs, practiced databases and SQL, and delivered data dashboards. Coursework covered Python, Java, C#, JavaScript, SQL, HTML/CSS, PHP, and Power BI, plus Agile project management (Scrum) and team coordination.',
     period: '2022 - 2025',
-    technologies: [
-      'Python',
-      'Java',
-      'C#',
-      'JavaScript',
-      'SQL',
-      'Power BI',
-      'HTML/CSS',
-      'PHP',
-      'Scrum',
-      'applied math',
+    technologies: ['Python', 'Java','C#', 'JavaScript', 'SQL', 'Power BI', 'HTML/CSS', 'PHP', 'Scrum', 'applied math',
     ],
   },
 ] as const;
