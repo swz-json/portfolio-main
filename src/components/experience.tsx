@@ -15,8 +15,7 @@ export const Experience = () => {
   return (
     <section
       ref={sectionRef}
-      id="
-Formation"
+      id="Experience"
       className="my-10 scroll-mt-28 md:mb-20"
     >
       <SectionHeading

@@ -26,17 +26,20 @@ export const Contact = () => {
   const onSubmit = async (values: TFormSchema) => {
   const res = await sendEmailAction(values);
 
-  if ('error' in res && res.error) {
-    toast.error(res.error);
+  if (!res || ('success' in res && !res.success)) {
+    toast.error(res?.error ?? 'Failed to send message');
     return;
+ 
+ 
+ 
+ 
   }
-
-  // success branch
-  const msg = 'message' in res && res.message ? res.message : 'Thanks! Your message was sent.';
-  toast.success(msg);
-
+toast.success(res.message ?? 'Message sent');
   reset();
+
 };
+
+
 
 
   return (
@@ -67,9 +70,10 @@ export const Contact = () => {
               className="text-muted-foreground hover:text-foreground h-fit p-0 font-medium underline transition-colors"
               asChild
             >
-              <Link href="mailto:skolakmichal1@gmail.com">
-                elmoufakkirwassim@gmail.com
-              </Link>
+             
+             <Link href="mailto:elmoufakkirwassim@gmail.com">
+               elmoufakkirwassim@gmail.com
+            </Link>
             </Button>{' '}
             or through this form.
           </>
@@ -103,6 +107,29 @@ export const Contact = () => {
             <p className="text-destructive mt-1 text-sm">
               {errors.email?.message}
             </p>
+          )}
+        </div>
+        <div className="w-full max-w-xl">
+          <label
+            htmlFor="name"
+            className={cn(
+              'text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70',
+              errors.name?.message && 'text-destructive'
+            )}
+          >
+            Name
+          </label>
+          <input
+            id="name"
+            placeholder="Your name"
+            {...register('name')}
+            className={cn(
+              'border-input bg-background ring-offset-background placeholder:text-muted-foreground focus-visible:ring-ring mt-2 flex h-10 w-full rounded-md border px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50',
+              errors.name?.message && 'border-destructive'
+            )}
+          />
+          {errors.name?.message && (
+            <p className="text-destructive mt-1 text-sm">{errors.name?.message}</p>
           )}
         </div>
         <div className="w-full max-w-xl">

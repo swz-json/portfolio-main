@@ -1,6 +1,6 @@
 ### Issue 😱:
 
-Closes https://github.com/Skolaczk/Portfolio/issues
+Closes https://github.com/swz-json/portfolio-main/issues
 
 ### What has been done ✅:
 
@@ -9,3 +9,5 @@ Closes https://github.com/Skolaczk/Portfolio/issues
 ### Screenshots/Videos 🎥:
 
 N/A
+
+
