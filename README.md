@@ -2,7 +2,7 @@
 
 A clean, fast, and mobile‑friendly portfolio website for **Data Engineering / AI** profiles. Built on top of a Next.js template and customized for my projects, skills, and experience.
 
-> Live site: **michalskolak.vercel.app**
+> Live site: **portfolio-main-five-inky.vercel.app**
 
 
 ---
@@ -36,9 +36,7 @@ A clean, fast, and mobile‑friendly portfolio website for **Data Engineering / 
 
 | Home                             | Projects                                 |
 | -------------------------------- | ---------------------------------------- |
-| <img width="1895" height="904" alt="image" src="https://github.com/user-attachments/assets/eb035c78-c462-4365-b989-12185c51ac16" />
- |<img width="1890" height="905" alt="image" src="https://github.com/user-attachments/assets/4ef288f5-5b91-4dbc-890f-15a8151a5fe2" />
-|
+| <img width="1895" height="904" alt="image" src="https://github.com/user-attachments/assets/eb035c78-c462-4365-b989-12185c51ac16" /> |<img width="1890" height="905" alt="image" src="https://github.com/user-attachments/assets/4ef288f5-5b91-4dbc-890f-15a8151a5fe2" />
 
 ---
 
