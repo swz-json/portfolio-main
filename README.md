@@ -1,4 +1,4 @@
-# Wassim Elmoufakkir — Portfolio (Next.js + Tailwind)
+# Wassim Elmoufakkir  Portfolio (Next.js + Tailwind)
 
 A clean, fast, and mobile‑friendly portfolio website for **Data Engineering / AI** profiles. Built on top of a Next.js template and customized for my projects, skills, and experience.
 
