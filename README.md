@@ -65,7 +65,6 @@ NEXT_PUBLIC_SITE_URL=http://localhost:3000
 # RESEND_API_KEY=re_************************
 ```
 
-> In production, set `NEXT_PUBLIC_SITE_URL` to your Vercel or custom domain (see below).
 
 ---
 
@@ -124,7 +123,7 @@ const skills = [
 
 ## 🧠 SEO & Metadata
 
-Edit **`src/app/layout.tsx`** metadata export:
+
 
 ```ts
 export const metadata = {
@@ -136,13 +135,12 @@ export const metadata = {
 };
 ```
 
-Add your own **favicon** in `public/favicon.ico` and (optionally) `public/apple-touch-icon.png`.
 
 ---
 
 ## 📧 Contact Form (with or without Resend)
 
-By default, the template expects a **Resend** API key. If you don’t want email sending in dev (or at all), you can keep a safe fallback in **`src/actions/send-email.ts`**:
+
 
 ```ts
 "use server";
@@ -167,8 +165,6 @@ export async function sendEmailAction(formData: FormData) {
   return { success: true, message: "Thanks! Email sending is disabled in this build." };
 }
 ```
-
-To enable real emails later, create a free account at **Resend**, add `RESEND_API_KEY` to `.env.local`, and wire it in `send-email.ts` using their SDK.
 
 ---
 
