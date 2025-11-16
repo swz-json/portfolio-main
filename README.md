@@ -209,22 +209,5 @@ In **Vercel → Project → Settings → Domains**:
 
 ---
 
-## 🙌 Credits
-
-* Base template: **AbdulBasit313/nextjs-portfolio-template** (MIT)
-* Icons: **Lucide**, **Radix**
-
----
-
-## 📄 License
-
-This project is released under the **MIT License**. See `LICENSE` for details.
-
----
-
-### 🇫🇷 Note rapide (FR)
-
-Ce dépôt est configuré pour un usage simple : cloner, `npm install`, `npm run dev`, personnaliser les sections, puis déployer sur Vercel. En cas d’erreur liée à Resend (clé API manquante), garde la version *fallback* du `send-email.ts` fournie ci‑dessus.
-
 
 
