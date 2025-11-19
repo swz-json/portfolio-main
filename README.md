@@ -6,7 +6,7 @@ A clean, fast, and mobile‑friendly portfolio website for **Data Engineering / 
 
 ## ✨ Features
 
-* ⚡ **Next.js 15** (App Router) + React + TypeScript
+* ⚡ **Next.js 15** (App Router) + React + TypeScript .
 * 🎨 **Tailwind CSS** with a modern dark UI
 * 🧩 Modular sections: Intro/Hero, About, Skills, Projects, Experience, Contact
 * 📱 Fully **responsive**
